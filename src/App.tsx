@@ -12,8 +12,13 @@ const App = () => {
 
                 <Section title={"work"}>
                     <Accordion icon={''} title={"Back-end developer"} location={"curitiba, pr"} date={"jan. 2025 - today"} description={""}></Accordion>
+                    <div className="border-b-tertiary-darker border-b-2"/>
                     <Accordion icon={''} title={"Back-end developer"} location={"curitiba, pr"} date={"jan. 2025 - today"} description={""}></Accordion>
+                    <div className="border-b-tertiary-darker border-b-2"/>
                     <Accordion icon={''} title={"Back-end developer"} location={"curitiba, pr"} date={"jan. 2025 - today"} description={""}></Accordion>
+                </Section>
+
+                <Section title={"projects"}>
                 </Section>
             </div>
         </>
