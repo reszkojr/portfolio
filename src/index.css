@@ -17,7 +17,19 @@
 }
 
 @theme {
-    --color-primary: hsl(10.2, 87.6%, 62%);
+    --color-primary-50: HSL(3.5 81% 95.9%);
+    --color-primary-100: HSL(3.6 76.7% 91.6%);
+    --color-primary-200: HSL(5.9 81.6% 82.9%);
+    --color-primary-300: HSL(7.4 83.8% 73.3%);
+    --color-primary-400: HSL(10.3 86.7% 61.8%);
+    --color-primary-500: HSL(11.6 63% 50.2%);
+    --color-primary-600: HSL(11.3 64% 39.2%);
+    --color-primary-700: HSL(11.4 66.7% 29.4%);
+    --color-primary-800: HSL(11.5 70.9% 20.2%);
+    --color-primary-900: HSL(11.3 80% 11.8%);
+    --color-primary-950: HSL(7.1 85% 7.8%);
+
+
     --color-secondary: HSL(0, 0%, 70%);
     --color-tertiary: HSL(0, 0%, 35%);
     --color-tertiary-darker: HSL(0, 0%, 18%);
