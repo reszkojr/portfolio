@@ -1,4 +1,5 @@
 import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
+import { useState } from 'react';
 
 interface AccordionProps {
     icon: string;
@@ -10,6 +11,8 @@ interface AccordionProps {
 }
 
 const Accordion = ({ title, badge, date, location, description }: AccordionProps) => {
+    const [isOpen, setIsOpen] = useState(false);
+
     return (
         <div className="flex flex-col items-start font-mono">
             <div className="flex gap-4 relative w-full">
@@ -27,7 +30,9 @@ const Accordion = ({ title, badge, date, location, description }: AccordionProps
                     </div>
                 </div>
                 <div className="absolute top-4 -translate-y-1/2 right-0">
-                    <KeyboardArrowDownIcon className="text-primary-400 text-2xl" />
+                    <button onClick={() => setIsOpen(prev => !prev)}>
+                        <KeyboardArrowDownIcon className="text-primary-400 text-2xl" />
+                    </button>
                 </div>
             </div>
             <div className="accordion-content">
