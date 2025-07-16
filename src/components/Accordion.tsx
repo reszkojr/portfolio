@@ -26,7 +26,7 @@ const Accordion = ({ title, badge, date, location, description }: AccordionProps
                         <span className="text-tertiary">* {date}</span>
                     </div>
                 </div>
-                <div className="absolute top-1/2 -translate-y-1/2 right-0">
+                <div className="absolute top-4 -translate-y-1/2 right-0">
                     <KeyboardArrowDownIcon className="text-primary-400 text-2xl" />
                 </div>
             </div>

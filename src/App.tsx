@@ -13,11 +13,16 @@ const App = () => {
         <>
             <div className="flex flex-col h-100 items-center p-6">
                 <div className="mb-8">
-                    <div className="flex items-center gap-5">
+                    <div className="flex items-top justify-between">
                         <h1>hello, I'm fabio</h1>
-                        <Badge Icon={WorkIcon} text={"open to work"} />
+                        <div className='pt-2'>
+                            <Badge Icon={WorkIcon} text={"open to work"} />
+                        </div>
                     </div>
-                    <p className="text-secondary">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam. </p>
+                    <p className="text-secondary">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
+                    </p>
                 </div>
 
                 <Section Icon={LaptopChromebookIcon} title={"work"}>
