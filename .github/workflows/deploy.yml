@@ -41,6 +41,10 @@ jobs:
           cache: 'pnpm'
       - name: Install dependencies
         run: pnpm install
+
+      - name: Debug vite.config.ts
+        run: cat vite.config.ts
+
       - name: Build
         run: pnpm run build
       - name: Setup Pages
