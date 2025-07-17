@@ -30,7 +30,7 @@ const App = () => {
                         description={"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam."}></Accordion> <div className="border-b-tertiary-darker border-b-2 my-2" />
                     <Accordion icon={''} title={"Fullstack developer"} location={"curitiba, pr"} date={"sep. 2024 - jan. 2025"} description={""}></Accordion>
                     <div className="border-b-tertiary-darker border-b-2 my-2" />
-                    <Accordion icon={''} title={"Python Intern developer"} location={"curitiba, pr"} date={"mar. 2023 - sep. 2023"} description={""}></Accordion>
+                    <Accordion icon={''} title={"Python intern developer"} location={"curitiba, pr"} date={"mar. 2023 - sep. 2023"} description={""}></Accordion>
                 </Section>
 
                 <Section Icon={SettingsSuggestIcon} title={"projects"}>
