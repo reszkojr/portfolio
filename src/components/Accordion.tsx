@@ -13,10 +13,15 @@ interface AccordionProps {
 const Accordion = ({ title, badge, date, location, description }: AccordionProps) => {
     const [isOpen, setIsOpen] = useState(false);
 
+    const toggleAccordion = () => {
+        if (description.trim() === '') return;
+        setIsOpen(prev => !prev);
+    }
+
     return (
         <div className="flex flex-col items-start font-mono">
-            <div className="flex gap-4 relative w-full">
-                <div className="w-14 h-14 bg-secondary rounded-lg">
+            <div className="flex gap-3 relative w-full">
+                <div className="w-14 h-14 bg-secondary rounded-xs">
                     <i className="icon icon-accordion"></i>
                 </div>
                 <div className="flex gap-1 justify-center flex-col grow">
@@ -29,14 +34,14 @@ const Accordion = ({ title, badge, date, location, description }: AccordionProps
                         <span className="text-tertiary">* {date}</span>
                     </div>
                 </div>
-                <div className="absolute top-4 -translate-y-1/2 right-0">
-                    <button onClick={() => setIsOpen(prev => !prev)}>
-                        <KeyboardArrowDownIcon className="text-primary-400 text-2xl" />
+                {description && <div className="absolute top-4 -translate-y-1/2 right-0">
+                    <button onClick={toggleAccordion} className={`cursor-pointer transition-[rotate] duration-150 ease-out text-2xl ${isOpen ? 'rotate-180' : ''}`}>
+                        <KeyboardArrowDownIcon className={`text-primary-400`} />
                     </button>
-                </div>
+                </div> }
             </div>
-            <div className="accordion-content">
-                <p className="text-secondary">{description}</p>
+            <div className={`w-full transition-[max-height] duration-300 ease-in-out overflow-hidden ${isOpen ? 'max-h-20' : 'max-h-0'}`}>
+                <p className="text-secondary text-xs pt-3">{description}</p>
             </div>
         </div>
     );
