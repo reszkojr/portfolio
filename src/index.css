@@ -33,7 +33,7 @@
     --color-secondary: HSL(0, 0%, 70%);
     --color-tertiary: HSL(0, 0%, 35%);
     --color-tertiary-darker: HSL(0, 0%, 18%);
-    --color-background: HSL(0, 0%, 12%);
+    --color-background: HSL(0, 0%, 8%);
 }
 
 h1 {

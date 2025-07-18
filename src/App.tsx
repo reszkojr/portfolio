@@ -3,6 +3,10 @@ import School from '@mui/icons-material/School';
 import SettingsSuggestIcon from '@mui/icons-material/SettingsSuggest';
 import WorkIcon from '@mui/icons-material/Work';
 
+import GitHubIcon from '@mui/icons-material/GitHub';
+import LinkedInIcon from '@mui/icons-material/LinkedIn';
+import AssignmentIndIcon from '@mui/icons-material/AssignmentInd';
+
 import Accordion from "./components/Accordion"
 import Section from "./components/Section"
 import Badge from './components/Badge';
@@ -23,6 +27,12 @@ const App = () => {
                         Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
                         incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
                     </p>
+                    <div className='flex items-start gap-2 mt-2'>
+                        <Badge Icon={GitHubIcon} text='Github' size='text-[0.8rem]' color={'github'} />
+                        <Badge Icon={LinkedInIcon} text='Linkedin' size='text-[0.8rem]' color={'linkedin'} />
+                        <Badge Icon={AssignmentIndIcon} text='Curriculum' size='text-[0.8rem]' color={'white'}/>
+
+                    </div>
                 </div>
 
                 <Section Icon={LaptopChromebookIcon} title={"work"}>
