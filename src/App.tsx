@@ -11,8 +11,8 @@ import Box from './components/Box';
 const App = () => {
     return (
         <>
-            <div className="flex flex-col h-100 items-center p-6">
-                <div className="mb-8">
+            <div className="flex flex-col h-full items-center p-6">
+                <div className="mb-8 max-w-4xl">
                     <div className="flex items-top justify-between">
                         <h1>hello, I'm fabio</h1>
                         <div className='pt-2'>
